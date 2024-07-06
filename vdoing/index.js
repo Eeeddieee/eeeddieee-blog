@@ -20,7 +20,13 @@ module.exports = (options, ctx) => {
 
   // base路径
   base = siteConfig.base || ''
-
+  //热部署
+  dev: {
+    poll: true
+  }
+  devServer: {
+    hot: true
+  }
   // 自动设置front matter
   setFrontmatter(sourceDir, themeConfig)
 
