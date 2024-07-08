@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'Eddie昌.com' // 域名 (不带https)
+const DOMAIN_NAME = 'eeeddieee.fun' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -30,46 +30,44 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '数仓及中台',
+        text: '数据管理',
         link: '/dw/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: '数据仓库',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: '《数据仓库工具箱》', link: '/dw/dw_toolkit/' },
+              { text: '《阿里巴巴大数据之路》', link: '/dw/ali_bigdata_road/' },
             ],
           },
           {
-            text: '学习笔记',
+            text: '数据中台',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
+              { text: '数据中台理论', link: '/dw/mp_theory/' }
+            ],
+          },
+          {
+            text: '数据治理',
+            items: [
               {
                 text: '《TypeScript 从零实现 axios》',
                 link: '/note/typescript-axios/',
               },
+            ],
+          },
+          {
+            text: '数据实践',
+            items: [
               {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
+                text: 'TypeScript', link: '/pages/51afd6/',
               },
             ],
           },
         ],
       },
       {
-        text: '数据治理理论及实践',
+        text: '数据分析',
         link: '/ui/',
         items: [
           { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
@@ -80,9 +78,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+          { text: '组件框架', link: '/pages/9a7ee40fc232253e/' },
+          { text: '运维', link: '/pages/4c778760be26d8b3/' },
+          { text: '工具', link: '/pages/117708e0af7f0bd9/' },
           { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
@@ -97,16 +95,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '友情链接', link: '/friends/' },
         ],
       },
-      { text: '关于', link: '/about/' },
-      {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
-      },
+      // { text: '关于', link: '/about/' },
+      // {
+      //   text: '收藏',
+      //   link: '/pages/beb6c0bd8a66cea6/',
+      //   // items: [
+      //   //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+      //   //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+      //   //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+      //   // ],
+      // },
       {
         text: '索引',
         link: '/archives/',
@@ -118,8 +116,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
-    repo: 'Eddie昌/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    logo: 'http://qny.eeeddieee.fun/pics/头像专用图.png', // 导航栏logo
+    // repo: 'Eddie昌/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -127,7 +125,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.Eddie昌.com/pages/a20ce8/ ***//
+    //*** 以下是Vdoing主题相关配置，文档：https://doc.eeeddieee.fun/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
@@ -177,7 +175,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       slogan: '数据领域小学生',
     },
 
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.Eddie昌.com/pages/a20ce8/#social)
+    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.eeeddieee.fun/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
@@ -210,7 +208,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extendFrontmatter: {
       author: {
         name: 'Eddie昌',
-        link: 'https://github.com/Eddie昌'
+        //link: 'https://github.com/Eddie昌'
       }
     },
 

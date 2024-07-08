@@ -2,7 +2,7 @@
 
 // 侧边栏
 module.exports = {
-  '/01.数仓及中台/': [
+  '/01.数据管理/': [
     {
       title: 'JavaScript',
       collapsable: false, //是否可折叠，可选的，默认true
@@ -58,10 +58,10 @@ module.exports = {
       ]
     },
     {
-      title: '学习笔记',
+      title: '数据治理',
       collapsable: false,
       children: [
-        ['02.学习笔记/01.小程序笔记','小程序笔记'],
+        ['02.数据治理/01.小程序笔记','小程序笔记'],
       ]
     },
     {
