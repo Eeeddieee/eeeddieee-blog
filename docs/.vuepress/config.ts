@@ -30,7 +30,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '数据管理',
+        text: '数据开发',
         link: '/dw/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -38,13 +38,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '数据仓库',
             items: [
               { text: '《数据仓库工具箱》', link: '/dw/dw_toolkit/' },
-              { text: '《阿里巴巴大数据之路》', link: '/dw/ali_bigdata_road/' },
+              { text: '《阿里巴巴大数据之路》', link: '/dw/ali_road/' },
             ],
           },
           {
             text: '数据中台',
             items: [
-              { text: '数据中台理论', link: '/dw/mp_theory/' }
+              { text: '数据中台理论', link: '/dw/dmp/' }
             ],
           },
           {
@@ -68,10 +68,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '数据分析',
-        link: '/ui/',
+        link: '/da/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: '数据分析1', link: '/pages/8309a5b876fc95e3/' },
+          { text: '数据分析2', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
@@ -81,7 +81,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '组件框架', link: '/pages/9a7ee40fc232253e/' },
           { text: '运维', link: '/pages/4c778760be26d8b3/' },
           { text: '工具', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
       {
@@ -92,7 +91,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
           { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
         ],
       },
       // { text: '关于', link: '/about/' },
@@ -201,7 +199,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a> | <a href="http://beian.miit.gov.cn/" target="_blank">桂ICP备2024034950号</a> | <img src="/img/beian.png" style="width: 15px; margin-bottom: -3px;" /> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=45142202000030" rel="noreferrer" target="_blank">桂公网安备45142202000030</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a> | <a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备2023070487号-1</a> | <img src="/img/beian.png" style="width: 15px; margin-bottom: -3px;" /> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44200102445447" rel="noreferrer" target="_blank">粤公网安备44200102445447</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
