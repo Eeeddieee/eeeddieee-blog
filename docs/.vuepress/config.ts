@@ -37,8 +37,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '数据仓库',
             items: [
-              { text: '《数据仓库工具箱》', link: '/dw/dw_toolkit/' },
-              { text: '《阿里巴巴大数据之路》', link: '/dw/ali_road/' },
+              { text: '《数据仓库工具箱》', link: '/pages/dw/toolkit/a612989/' },
+              { text: '《阿里巴巴大数据之路》', link: '/pages/dw/road/a6129829/' },
             ],
           },
           {
