@@ -35,25 +35,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '数据仓库',
+            text: '数据理论',
             items: [
               { text: '《数据仓库工具箱》', link: '/pages/dw/toolkit/a612989/' },
               { text: '《阿里巴巴大数据之路》', link: '/pages/dw/road/a6129829/' },
-            ],
-          },
-          {
-            text: '数据中台',
-            items: [
-              { text: '数据中台理论', link: '/dw/dmp/' }
-            ],
-          },
-          {
-            text: '数据治理',
-            items: [
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
+              { text: '《DAMA数据治理》', link: '/pages/dw/dama/pqj7d2ask9hpyw3/' },
             ],
           },
           {
@@ -76,9 +62,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '技术',
-        link: '/technology/',
+        link: '/tec/',
         items: [
-          { text: '组件框架', link: '/pages/9a7ee40fc232253e/' },
+          { text: 'Hadoop', link: '/pages/tec/hadoop/bfjafwkczzxqjzk/' },
+          { text: 'Hive', link: '/pages/tec/hive/28iahrcrwbxiicr/' },
           { text: '运维', link: '/pages/4c778760be26d8b3/' },
           { text: '工具', link: '/pages/117708e0af7f0bd9/' },
         ],
@@ -224,7 +211,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-B0JD32XylL' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
