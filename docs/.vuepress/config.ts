@@ -64,10 +64,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术',
         link: '/tec/',
         items: [
-          { text: 'Hadoop', link: '/pages/tec/hadoop/bfjafwkczzxqjzk/' },
-          { text: 'Hive', link: '/pages/tec/hive/28iahrcrwbxiicr/' },
-          { text: '运维', link: '/pages/4c778760be26d8b3/' },
-          { text: '工具', link: '/pages/117708e0af7f0bd9/' },
+          { text: 'Hadoop生态', link: '/pages/tec/hive/28iahrcrwbxiicr/' },
+          { text: 'Linux', link: '/pages/tec/linux/jezm4fpgxectascn/' },
+          { text: 'Git', link: '/pages/tec/hive/mhkpi1k8xc0bajh4/' },
+          { text: '爱SQL', link: '/pages/tec/sql/kk8emjnny6/' },
         ],
       },
       {
@@ -76,7 +76,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '学习', link: '/pages/f2a556/' },
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
+          { text: '心情杂货', link: '/pages/tec/sql/kk8emjnny6/' },
           { text: '实用技巧', link: '/pages/baaa02/' },
         ],
       },
@@ -208,7 +208,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '数据开发博客,个人技术博客,数仓,数据治理,数据分析,数据面试题,技术文档,学习,面试,Hadoop,Hive,Spark,Flink,Mpp,Python,Node,git,github,markdown',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-B0JD32XylL' }], // 百度统计的站长验证（你可以去掉）
